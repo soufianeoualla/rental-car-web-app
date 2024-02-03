@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", sans-serif;
+}
+body{
+  font-size: 12px;
+}
+
+
+.wrapper {
+  grid-template-columns: 8% 92%;
+}
+
+
+
+.badge{
+  border: 1px solid #ffffff;
+  
+}
+.badge-dark{
+  border: 1px solid #161d03;
+  width: 10px;
+  height: 10px;
+}
+
+/* Slider start*/
+
+.MuiSlider-thumb {
+  border: 5px solid #3a80f4 !important;
+  background-color: #ffffff !important;
+}
+.MuiSlider-rail {
+  background-color: #ffffff !important;
+}
+.MuiSlider-track,
+.css-7d61z1-MuiSlider-valueLabel {
+  background-color: #3a80f4 !important;
+}
+
+.css-7d61z1-MuiSlider-valueLabel {
+  border-radius: 8px !important;
+  padding: 0.3rem 1rem !important ;
+}
+.css-7d61z1-MuiSlider-valueLabel::before {
+  display: none;
+}
+
+.css-7d61z1-MuiSlider-valueLabel {
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.25);
+  top: -15px !important;
+}
+
+/* Slider  end*/
+
+/* type checkbox start */
+
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-12wnr2w-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #3a80f4 !important;
+}
+
+/* type checkbox end */
+
+/* toggle  start*/
+
+.available-toggle {
+  top: 46%;
+  transform: translate(0, -46%);
+  left: 3px;
+}
+
+.is-available {
+  left: inherit;
+  right: 3px;
+  transition: all 1s ease;
+}
+
+/* toggle  end */
+
+.car-card {
+  border: 1px solid #ececec;
+  width: 48.9%;
+}
+
+/* car-card  end */
+
+
+.new {
+  background: linear-gradient(
+    83deg,
+    rgba(243, 165, 58, 1) 19%,
+    rgba(244, 114, 58, 1) 100%
+  );
+}
+
+/* car-card  end */
+
+/* lightbox  start */
+
+.app-wrapper{
+  position: relative;
+}
+.app-wrapper::before{
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #161d0334;
+  z-index: 2;
+
+}
+
+/* lightbox  end */

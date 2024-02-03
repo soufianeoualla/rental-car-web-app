@@ -314,7 +314,7 @@ function App() {
 
   return (
     <>
-      <div 
+      <div onClick={()=> menuClicked && setMenuClicked(false)}
       className={`${menuClicked &&'app-wrapper'} text-dark ${isDark && "bg-dark text-white"} `}>
         <div className='container pb-2 m-auto '>
           <Router>

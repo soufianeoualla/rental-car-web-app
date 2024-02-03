@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import { BsMoon,BsSun  } from "react-icons/bs";
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
 
+import img from './assets/user-img.png'
+
 
 
 
@@ -65,7 +67,7 @@ const Header = ({ isDark, setIsDark,setMenuClicked }) => {
         <div className='user-info flex gap-3'>
           <img
             className='w-10'
-            src='src\components\assets\user-img.png'
+            src={img}
             alt=''
           />
           <div className='name flex font-bold items-center gap-1 text-xs'>

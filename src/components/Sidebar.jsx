@@ -49,7 +49,7 @@ const Sidebar = ({ isDark, favorite, menuClicked, setMenuClicked }) => {
         >
           <button
             onClick={() => setMenuClicked(false)}
-            className="absolute top-5 close-menu hidden sm:block"
+            className="absolute top-10 close-menu hidden sm:block"
           >
             <CloseRoundedIcon />
           </button>

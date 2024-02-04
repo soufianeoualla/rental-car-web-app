@@ -10,7 +10,7 @@ const Wishlist = ({ favorite, handleFavoriteClick }) => {
         favorite.map((item) => (
           <div
             key={item}
-            className='car-card-wishlist border-gray-off border-2 bg-white grid cursor-pointer w-1/4  p-3 rounded-lg xl:w-5/12 md:w-4/5 sm:w-5/12 xs:w-full'
+            className='car-card-wishlist border-gray-off border-2 bg-white grid cursor-pointer w-1/4 h-1/4  p-3 rounded-lg xl:w-5/12 md:w-4/5 sm:w-5/12 xs:w-full'
           >
             <div className='flex justify-between'>
               <div className='flex gap-2 items-center'>

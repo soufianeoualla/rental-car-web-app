@@ -1,11 +1,8 @@
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 const Wishlist = ({ favorite, handleFavoriteClick }) => {
-
-
-
   return (
-    <div className='wishlist-wrapper flex gap-2 flex-wrap sm:h-screen sm:w-screen'>
+    <div className='wishlist-wrapper h-screen flex gap-2 flex-wrap sm:h-screen sm:w-screen'>
       {favorite &&
         favorite.map((item) => (
           <div

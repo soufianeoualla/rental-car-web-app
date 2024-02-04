@@ -1,13 +1,16 @@
 import { BsHeart, BsHeartFill } from "react-icons/bs";
 
 const Wishlist = ({ favorite, handleFavoriteClick }) => {
+
+
+
   return (
-    <div className='wishlist-wrapper flex gap-2 flex-wrap h-screen sm:w-screen'>
+    <div className='wishlist-wrapper flex gap-2 flex-wrap sm:h-screen sm:w-screen'>
       {favorite &&
-        favorite.map((item, index) => (
+        favorite.map((item) => (
           <div
             key={item}
-            className='car-card bg-white grid cursor-pointer h-72 p-3 rounded-lg sm:w-full'
+            className='car-card-wishlist border-gray-off border-2 bg-white grid cursor-pointer w-1/4  p-3 rounded-lg xl:w-5/12 md:w-4/5 sm:w-5/12 xs:w-full'
           >
             <div className='flex justify-between'>
               <div className='flex gap-2 items-center'>
@@ -26,8 +29,8 @@ const Wishlist = ({ favorite, handleFavoriteClick }) => {
                     : `Booked till ${item.car.availability.booked}`}{" "}
                 </span>
               </div>
-              <button onClick={() => handleFavoriteClick(index)}>
-                {favorite.some((favCar) => favCar.index === index) ? (
+              <button onClick={() => handleFavoriteClick(item.index)}>
+                {favorite.some((favCar) => favCar.index === item.index) ? (
                   <BsHeartFill className='text-blue text-2xl' />
                 ) : (
                   <BsHeart className='text-blue text-2xl' />

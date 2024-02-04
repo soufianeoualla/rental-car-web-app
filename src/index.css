@@ -12,6 +12,10 @@
 body{
   font-size: 12px;
 }
+.container{
+  max-width: 1440px;
+}
+
 
 
 .wrapper {
